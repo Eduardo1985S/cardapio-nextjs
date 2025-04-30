@@ -1,7 +1,14 @@
 :root {
-    --primary: #8b0000;
-    --bg: #f9f9f9;
-    --text: #333;
+    /* Vermelho vinho profundo, remete a tintos europeus */
+    --color-primary: #5D001E;
+    /* Dourado envelhecido, para detalhes e destaques elegantes */
+    --color-secondary: #CBA135;
+    /* Creme suave, para fundos claros e leitura confortável */
+    --color-bg: #fef8e8;
+    /* Cinza escuro, para textos principais */
+    --color-text: #333333;
+    /* Verde oliva discreto, toque mediterrâneo */
+    --color-accent: #8E9775;
 }
 
 *,
@@ -14,13 +21,13 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: var(--color-bg);
+    color: var(--color-text);
     line-height: 1.6;
 }
 
 header {
-    background: var(--primary);
+    background: var(--color-primary);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -36,17 +43,18 @@ nav {
 
 nav button {
     background: none;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--color-primary);
     padding: 0.4rem 0.8rem;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 nav button.active,
 nav button:hover {
-    background: var(--primary);
+    background: var(--color-secondary);
     color: #fff;
+    cursor: pointer;
 }
 
 main {
@@ -60,9 +68,11 @@ main {
 }
 
 .menu-section h2 {
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    color: var(--color-primary);
+    cursor: pointer;
 }
 
 .menu-items {
@@ -72,6 +82,8 @@ main {
 }
 
 .menu-item {
+    position: relative;
+    /* necessário para o ::before funcionar */
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -79,6 +91,7 @@ main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item img {
@@ -94,8 +107,9 @@ main {
 }
 
 .menu-item h3 {
-    color: var(--primary);
+    color: var(--color-secondary);
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .menu-item p {
@@ -105,6 +119,29 @@ main {
 .menu-item .price {
     margin-top: auto;
     font-weight: bold;
+    color: var(--color-accent);
+}
+
+/* Hover nos cards */
+.menu-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Sutileza de overlay, usando cor secundária bem suave */
+.menu-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background: rgba(203, 161, 53, 0);
+    transition: background 0.3s ease;
+    pointer-events: none;
+    /* impede o overlay de bloquear cliques */
+}
+
+.menu-item:hover::before {
+    background: rgba(203, 161, 53, 0.1);
 }
 
 @media (max-width: 600px) {
@@ -116,5 +153,8 @@ main {
 footer {
     text-align: center;
     padding: 1rem 0;
-    color: #666;
+    color: var(--color-text);
+    background: #fff;
+    border-top: 1px solid var(--color-primary);
+    cursor: pointer;
 }

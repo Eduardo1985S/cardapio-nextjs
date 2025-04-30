@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-export default function OrderSummary({ items, onIncrease, onDecrease, onClear }) {
+export default function OrderSummary({ items, onIncrease, onDecrease }) {
     // Agrupa e conta quantidades
     const summary = useMemo(() => {
         const map = {};
@@ -52,14 +52,6 @@ export default function OrderSummary({ items, onIncrease, onDecrease, onClear })
         cursor: 'pointer'
     };
 
-    // Handler para envio: limpa a comanda após abrir o WhatsApp
-    const handleSend = () => {
-        // Abre o link em nova aba
-        window.open(whatsappURL, '_blank');
-        // Limpa o carrinho
-        if (typeof onClear === 'function') onClear();
-    };
-
     return (
         <aside style={{
             position: 'fixed',
@@ -92,9 +84,19 @@ export default function OrderSummary({ items, onIncrease, onDecrease, onClear })
                         >
                             <div>{i.name}</div>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <button onClick={() => onDecrease(i.name)} style={btnStyle}>–</button>
+                                <button
+                                    onClick={() => onDecrease(i.name)}
+                                    style={btnStyle}
+                                >
+                                    –
+                                </button>
                                 <span>{i.qty}</span>
-                                <button onClick={() => onIncrease(i.name)} style={btnStyle}>+</button>
+                                <button
+                                    onClick={() => onIncrease(i.name)}
+                                    style={btnStyle}
+                                >
+                                    +
+                                </button>
                             </div>
                         </div>
                     ))}
@@ -119,22 +121,23 @@ export default function OrderSummary({ items, onIncrease, onDecrease, onClear })
                         </pre>
                     </div>
 
-                    <button
-                        onClick={handleSend}
+                    <a
+                        href={whatsappURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         style={{
                             display: 'block',
-                            width: '100%',
+                            marginTop: '1rem',
                             background: '#25D366',
                             color: '#fff',
                             textAlign: 'center',
                             padding: '0.5rem',
-                            border: 'none',
                             borderRadius: '4px',
-                            cursor: 'pointer'
+                            textDecoration: 'none'
                         }}
                     >
                         👉 Enviar pedido
-                    </button>
+                    </a>
                 </>
             )}
         </aside>

@@ -14,11 +14,130 @@
         "img": "/images/caprese.jpg"
     },
     {
+        "category": "Entradas",
+        "name": "Carpaccio de Carne",
+        "desc": "Fatias finas de carne crua com rúcula e lascas de parmesão.",
+        "price": 28.00,
+        "img": "/images/carpaccio.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Pâté de Foie Gras",
+        "desc": "Patê de fígado de ganso servido com torradinhas.",
+        "price": 35.00,
+        "img": "/images/pate.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Ceviche Mediterrâneo",
+        "desc": "Peixe branco marinado em limão com cebola roxa e coentro.",
+        "price": 26.00,
+        "img": "/images/ceviche.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Vieiras Grelhadas",
+        "desc": "Vieiras ao alho e óleo com toque de limão siciliano.",
+        "price": 32.00,
+        "img": "/images/vieiras.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Calamares à Romana",
+        "desc": "Lulas empanadas com molho tártaro.",
+        "price": 24.00,
+        "img": "/images/calamares.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Tapenade de Azeitonas",
+        "desc": "Pasta de azeitonas pretas com pão rústico.",
+        "price": 20.00,
+        "img": "/images/tapenade.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Tábua de Queijos",
+        "desc": "Seleção de queijos europeus com geleia e nozes.",
+        "price": 38.00,
+        "img": "/images/queijos.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Sopa de Cebola Gratinada",
+        "desc": "Sopa de cebola com queijo gratinado.",
+        "price": 19.00,
+        "img": "/images/sopa-cebola.jpg"
+    },
+    {
         "category": "Pratos Principais",
         "name": "Filé à Parmegiana",
         "desc": "Bife empanado com molho de tomate e queijo.",
         "price": 45.00,
         "img": "/images/parmegiana.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Risoto de Cogumelos",
+        "desc": "Arroz arbóreo com mix de cogumelos selvagens.",
+        "price": 42.00,
+        "img": "/images/risoto-cogumelos.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Paella Valenciana",
+        "desc": "Arroz com frutos do mar, açafrão e legumes.",
+        "price": 52.00,
+        "img": "/images/paella.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Coq au Vin",
+        "desc": "Frango ao vinho tinto com bacon e cebolas.",
+        "price": 48.00,
+        "img": "/images/coq-au-vin.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Osso Buco",
+        "desc": "Perna de vitela ao molho de vinho branco.",
+        "price": 55.00,
+        "img": "/images/osso-buco.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Bouillabaisse",
+        "desc": "Sopa de peixe típica de Marselha com torradas.",
+        "price": 50.00,
+        "img": "/images/bouillabaisse.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Beef Wellington",
+        "desc": "Filé mignon em crosta de massa folhada.",
+        "price": 60.00,
+        "img": "/images/beef-wellington.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Magret de Pato",
+        "desc": " ao molho de laranja.",
+        "price": 58.00,
+        "img": "/images/magret.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Tagliatelle ao Ragu",
+        "desc": "Massa fresca com ragu de carne bovina.",
+        "price": 40.00,
+        "img": "/images/tagliatelle.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Polenta Cremosa",
+        "desc": "Polenta com queijo grana padano e castanhas.",
+        "price": 36.00,
+        "img": "/images/polenta.jpg"
     },
     {
         "category": "Sobremesas",
@@ -28,10 +147,143 @@
         "img": "/images/tiramisu.jpg"
     },
     {
+        "category": "Sobremesas",
+        "name": "Crème Brûlée",
+        "desc": "Creme de baunilha com crosta de açúcar queimado.",
+        "price": 22.00,
+        "img": "/images/creme-brulee.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Panna Cotta",
+        "desc": "Doce de creme com calda de frutas vermelhas.",
+        "price": 18.00,
+        "img": "/images/panna-cotta.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Profiteroles",
+        "desc": "Bombinhas de massa choux com recheio de creme.",
+        "price": 24.00,
+        "img": "/images/profiteroles.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Tarte Tatin",
+        "desc": "Torta invertida de maçã caramelizada.",
+        "price": 21.00,
+        "img": "/images/tarte-tatin.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Pastel de Nata",
+        "desc": "Pastelzinho português com creme de ovos.",
+        "price": 16.00,
+        "img": "/images/pastel-nata.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Pavlova",
+        "desc": "Merengue crocante com frutas frescas.",
+        "price": 23.00,
+        "img": "/images/pavlova.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Strudel de Maçã",
+        "desc": "Massa folhada com recheio de maçã e canela.",
+        "price": 19.00,
+        "img": "/images/strudel.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Mousse de Chocolate",
+        "desc": "Mousse leve de chocolate amargo.",
+        "price": 20.00,
+        "img": "/images/mousse.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Cheesecake de Frutas",
+        "desc": "Cheesecake com calda de frutas vermelhas.",
+        "price": 22.00,
+        "img": "/images/cheesecake.jpg"
+    },
+    {
         "category": "Bebidas",
         "name": "Suco Natural",
         "desc": "450ml de frutas da estação.",
         "price": 12.00,
         "img": "/images/suco.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Vinho Tinto da Casa",
+        "desc": "Taça de tinto encorpado europeu.",
+        "price": 28.00,
+        "img": "/images/vinho-tinto.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Vinho Branco Seco",
+        "desc": "Taça de branco fresco e leve.",
+        "price": 26.00,
+        "img": "/images/vinho-branco.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Sangria Clássica",
+        "desc": "Vinho, frutas e um toque de especiarias.",
+        "price": 24.00,
+        "img": "/images/sangria.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Aperol Spritz",
+        "desc": "Prosecco, Aperol e água com gás.",
+        "price": 30.00,
+        "img": "/images/aperol-spritz.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Café Expresso",
+        "desc": "Dose concentrada de café.",
+        "price": 8.00,
+        "img": "/images/expresso.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Chá Gelado de Hibisco",
+        "desc": "Infusão gelada de flores de hibisco.",
+        "price": 14.00,
+        "img": "/images/chagedo.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Limoncello",
+        "desc": "Licor italiano de limão, servido gelado.",
+        "price": 16.00,
+        "img": "/images/limoncello.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Água com Gás",
+        "desc": "500ml de água mineral gaseificada.",
+        "price": 45.00,
+        "img": "/images/agua-gas.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Cerveja Artesanal",
+        "desc": "300ml de rótulo local ou importado.",
+        "price": 18.00,
+        "img": "/images/cerveja.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Smoothie de Frutas",
+        "desc": "Mistura de frutas frescas e iogurte.",
+        "price": 20.00,
+        "img": "/images/smoothie.jpg"
     }
 ]
