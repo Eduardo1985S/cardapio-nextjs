@@ -1,0 +1,120 @@
+:root {
+    --primary: #8b0000;
+    --bg: #f9f9f9;
+    --text: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    background: #fff;
+}
+
+nav button {
+    background: none;
+    border: 1px solid var(--primary);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    color: var(--primary);
+}
+
+nav button.active,
+nav button:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item .content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+    margin-top: auto;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        flex: 1 1 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #666;
+}

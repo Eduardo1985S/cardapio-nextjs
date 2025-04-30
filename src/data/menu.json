@@ -1,0 +1,37 @@
+[
+    {
+        "category": "Entradas",
+        "name": "Bruschetta",
+        "desc": "Pão tostado com tomate, manjericão e alho.",
+        "price": 18.00,
+        "img": "/images/bruschetta.jpg"
+    },
+    {
+        "category": "Entradas",
+        "name": "Salada Caprese",
+        "desc": "Tomate, mussarela de búfala e manjericão.",
+        "price": 22.00,
+        "img": "/images/caprese.jpg"
+    },
+    {
+        "category": "Pratos Principais",
+        "name": "Filé à Parmegiana",
+        "desc": "Bife empanado com molho de tomate e queijo.",
+        "price": 45.00,
+        "img": "/images/parmegiana.jpg"
+    },
+    {
+        "category": "Sobremesas",
+        "name": "Tiramisu",
+        "desc": "Delicioso clássico italiano.",
+        "price": 20.00,
+        "img": "/images/tiramisu.jpg"
+    },
+    {
+        "category": "Bebidas",
+        "name": "Suco Natural",
+        "desc": "450ml de frutas da estação.",
+        "price": 12.00,
+        "img": "/images/suco.jpg"
+    }
+]
