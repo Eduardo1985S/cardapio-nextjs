@@ -36,7 +36,7 @@ export default function OrderSummary({ items, onIncrease, onDecrease }) {
     const whatsappURL = useMemo(
         () => {
             const encoded = encodeURIComponent(rawText);
-            return `https://api.whatsapp.com/send?phone=11958554248&text=${encoded}`;
+            return `https://api.whatsapp.com/send?phone=xxxxxxxxxxx&text=${encoded}`;
         },
         [rawText]
     );
